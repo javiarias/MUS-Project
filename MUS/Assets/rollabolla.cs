@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class rollabolla : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class rollabolla : MonoBehaviour
     public float maxForce = 100.0f;
 
     public GameObject camera;
+    private FMODEventPlayable ev;
 
     void FixedUpdate()
     {
@@ -24,10 +27,19 @@ public class rollabolla : MonoBehaviour
 
         look.Normalize();   orthoLook.Normalize();
 
-        if (GetComponent<Rigidbody>().velocity.magnitude < maxForce)
+        float magnitude = GetComponent<Rigidbody>().velocity.magnitude;
+
+        if (magnitude < maxForce)
         {
             GetComponent<Rigidbody>().AddForce(look * movementVertical * speed * Time.deltaTime);
             GetComponent<Rigidbody>().AddForce(orthoLook * movementHorizontal * speed * Time.deltaTime);
         }
+        else
+        {
+            Debug.Log("boop");
+        }
+
+        var emitter = GetComponent<FMODUnity.StudioEventEmitter>();
+        emitter.SetParameter("speed", magnitude * (15 / maxForce));
     }
 }
