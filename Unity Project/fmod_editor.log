@@ -7,13 +7,47 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002AE390AFC48 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000026515F1E4D8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002650AE9A178
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002650AE9A178
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002650AE9A4D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002650AE9A4D8
+[LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002650AE9A328
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002650AE9A328
+[LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SoundI::release                          : Tenor (000002650AE99AB8)
+[LOG] SoundI::release                          :     Tenor (0000026509FC35D8)
+[LOG] SoundI::release                          :     Tenor (000002650AE9A4D8)
+[LOG] SoundI::release                          : Soprano (000002650AE99FC8)
+[LOG] SoundI::release                          :     Soprano (0000026509FC6698)
+[LOG] SoundI::release                          :     Soprano (000002650AE9A9E8)
+[LOG] SoundI::release                          : Bateria (000002650AE9AB98)
+[LOG] SoundI::release                          :     Bateria (0000026509FC61B8)
+[LOG] SoundI::release                          :     Bateria (000002650AE99C68)
+[LOG] SoundI::release                          : Bajo (000002650AE99908)
+[LOG] SoundI::release                          :     Bajo (0000026509FC64F8)
+[LOG] SoundI::release                          :     Bajo (000002650AE9A328)
+[LOG] SoundI::release                          : Contralto (000002650AE99E18)
+[LOG] SoundI::release                          :     Contralto (0000026509FC2A78)
+[LOG] SoundI::release                          :     Contralto (000002650AE9A178)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 125)
@@ -24,4 +58,6 @@
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.

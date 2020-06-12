@@ -31,6 +31,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -766,4 +767,4 @@ ScriptsOnlyBuild:
   platform: 24
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/shoosh/Documents/GitHub/MUS-Project/Build/LINUX X64/linux_build.x86_64
+  playerPath: C:/Users/shoosh/Documents/GitHub/MUS-Project/Builds/LINUX X64/linux_build.x86_64
